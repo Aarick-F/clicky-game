@@ -3,7 +3,10 @@ import "./Image.css";
 
 const Image = props => {
   return (
-    <img className="image" src={props.source} />
+    <img className="image"
+    alt={props.name}
+    src={props.source}
+    onClick={props.click} />
   );
 }
 
